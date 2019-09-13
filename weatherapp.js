@@ -15,7 +15,7 @@ window.addEventListener("load", ()=> {
 				return response.json();
 			})
 			.then(data => {
-				console.log(data.success);
+				console.log(data);
 
 			});
 		});
