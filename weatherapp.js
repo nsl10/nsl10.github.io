@@ -12,7 +12,7 @@ window.addEventListener("load", ()=> {
 		
 		fetch(https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/7a932a5a33acf352e36e63f87af62440/37.8267,-122.4233))
 			.then(response => { 
-		      	return res.json();
+		      	return response.json();
 			})
 			.then(data => {
 			console.log(data);
