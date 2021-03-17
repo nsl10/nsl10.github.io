@@ -1,0 +1,13 @@
+body{
+	font-family: georgia;
+	margin: 0;
+	text-align: center;
+}
+.heading{
+	text-align: left;
+	color: #336699;
+	font-size: 13.5pt;
+}
+.hide{
+	display: none;
+}
