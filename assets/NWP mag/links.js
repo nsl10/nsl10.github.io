@@ -30,7 +30,13 @@ function pClick() {
 		DiningParagraph.className = "container hide"
 		LifestyleParagraph.className = "container hide"
 		BlogParagraph.className = "container hide"
+
 		para.className = "container";
+		HomeParagraphLine.className = HomeParagraph.className
+		UpcomingEventsParagraphLine.className = UpcomingEventsParagraph.className
+		DiningParagraphLine.className = DiningParagraph.className
+		LifestyleParagraphLine.className = LifestyleParagraph.className
+		BlogParagraphLine.className = BlogParagraph.className
 	}
 	else {
 	}

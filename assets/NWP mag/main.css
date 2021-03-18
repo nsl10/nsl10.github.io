@@ -8,6 +8,16 @@ body{
 	color: #336699;
 	font-size: 13.5pt;
 }
+a.Tabs{
+	text-decoration: none;
+	color: black;
+}
 .hide{
 	display: none;
+}
+hr{
+	border-top: 2px solid #f0f4fc;
+}
+.block{
+	background: #f0f4fc;
 }
