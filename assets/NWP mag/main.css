@@ -1,12 +1,25 @@
 body{
 	font-family: georgia;
+	font-size: 13.5pt;
 	margin: 0;
 	text-align: center;
+	font-weight: lighter;
+}
+.title{
+	font-size: 30pt;
+	font-family: arial;
+	line-height: 1.2;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+.subtitle{
+	font-size: 18pt;
 }
 .heading{
 	text-align: left;
 	color: #336699;
-	font-size: 13.5pt;
+	padding: 30px
 }
 a.Tabs{
 	text-decoration: none;
@@ -20,4 +33,17 @@ hr{
 }
 .block{
 	background: #f0f4fc;
+}
+.partners{
+	font-size: 27pt;
+	font-family: arial;
+}
+.messages{
+	text-align: left;
+	font-size: 18pt;
+}
+.subscribe{
+	font-size: 27pt;
+	font-family: arial;
+	margin: 50px;
 }
