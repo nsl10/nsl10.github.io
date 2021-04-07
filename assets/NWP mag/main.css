@@ -1,7 +1,7 @@
 body{
 	font-family: georgia;
 	font-size: 13.5pt;
-	margin: 0;
+	overflow-x: hidden;
 	text-align: center;
 	font-weight: lighter;
 }
@@ -9,12 +9,13 @@ body{
 	font-size: 30pt;
 	font-family: arial;
 	line-height: 1.2;
-	padding-top: 50px;
+	padding-top: 10px;
 	padding-bottom: 20px;
 	font-weight: bold;
 }
 .subtitle{
 	font-size: 18pt;
+	margin-top: 10px;
 }
 .heading{
 	text-align: left;
@@ -33,7 +34,21 @@ hr{
 }
 .block{
 	background: #f0f4fc;
+	margin: 10px;
 }
+.lifestyle-subtitle{
+	font-size: 18pt;
+	font-family: georgia;
+	padding: 15px;
+	color: black;
+}
+.lifestyle-description{
+	font-size: 13.5pt;
+	font-family: georgia;
+	padding: 15px;
+	color: black;
+}
+
 .partners{
 	font-size: 27pt;
 	font-family: arial;
@@ -46,4 +61,147 @@ hr{
 	font-size: 27pt;
 	font-family: arial;
 	margin: 50px;
+}
+
+
+.subscriber{
+	width: 50%;
+	position: relative;
+	height: 50px;
+	padding-bottom: 10px;
+}
+.subscriber input {
+	width: 100%;
+	height: 100%;	
+	padding-top: 20px;
+	border: none;
+	outline: none;
+}
+.subscriber label {
+	position: absolute;
+	bottom: 0px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid black;
+}
+.subscriber label::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	transition: transform 0.3s ease;
+}
+.subscriber .content-name {
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	transition: all 0.3s ease;
+}
+.subscriber input:focus + .label-name .content-name, .subscriber input:valid + .label-name .content-name {
+	transform: translateY(-120%);
+	font-size: 14px;
+	color: #1e81b0;
+
+}
+
+.subscriber input:focus + .label-name::after{
+	border: 1px solid;
+}
+
+.subscriber button{
+	position: absolute;
+	bottom: 10px;
+	right: -150px;
+	background-color: #76b5c5;
+	border: none;
+	padding: 10px 28px;
+}
+
+
+.messanger{
+	width: 50%;
+	position: relative;
+	height: 50px;
+	padding-bottom: 10px;
+}
+.messanger input {
+	width: 100%;
+	height: 100%;	
+	padding-top: 20px;
+	border: none;
+	outline: none;
+}
+.messanger label {
+	position: absolute;
+	bottom: 0px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid black;
+}
+.messanger label::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	transition: transform 0.3s ease;
+}
+.messanger .content-name {
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	transition: all 0.3s ease;
+}
+.messanger input:focus + .label-name .content-name, .messanger input:valid + .label-name .content-name {
+	transform: translateY(-120%);
+	font-size: 14px;
+	color: #1e81b0;
+
+}
+
+.messanger input:focus + .label-name::after{
+	border: 1px solid;
+}
+
+.messanger button{
+	background-color: #76b5c5;
+	border: none;
+	padding: 10px 40%;
+}
+
+.item{
+	background-color: white;
+	height: 300px;
+}
+.image-fit{
+	height: 120px;
+	width: 99%;
+	margin: 2px;
+}
+.MagazineBackground {
+	height: 500px;
+}
+.date{
+	font-size: 12pt;
+	font-family: georgia;
+	color: grey;
+}
+.description{
+	font-size: 18pt;
+	font-family: georgia;
+	height: 100px;
+	margin: 10px;
+	color: black;
+}
+.continue{
+	font-size: 13.5pt;
+	font-family: georgia;
+	color: #1e81b0;
 }

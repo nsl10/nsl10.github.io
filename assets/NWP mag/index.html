@@ -17,7 +17,7 @@
 						<div><div class="title">NORTH WEST<br>PHILADELPHIA<br>MAGAZINE</div></div>
 							<div class="container-fluid">
 								<div class="row">
-									<div class="col-sm-1" style="margin: 5px 0 0 0;"><a href=""></a></div>
+									
 
 									<div class="col-sm-2" style="margin: 5px 0 0 0;"><a class="Tabs" data-para = "HomeParagraph" id="Home" href="#">HOME</a><br><hr width=100px; color="blue"; class = "container" id="HomeParagraphLine"></div>
 
@@ -25,14 +25,15 @@
 
 									<div class="col-sm-2"  style="margin: 5px 0 0 0;"><a class="Tabs" data-para = "DiningParagraph" id="Dining" href="#">DINING</a><br><hr width=100px; color="blue"; class = "container hide" id="DiningParagraphLine"></div>
 
-									<div class="col-sm-2" style="margin: 5px 0 0 0;"><a class="Tabs" data-para = "LifestyleParagraph" id="Lifestyle" href="#">LIFESTYLE</a><br><hr width=100px; color="blue"; class = "container hide" id="LifestyleParagraphLine"></div>
+									<div class="col-sm-2" style="margin: 5px 0 0 0;"><a class="Tabs" data-para = "LifestyleParagraph" id="Lifestyle" href="#">CULTURE</a><br><hr width=100px; color="blue"; class = "container hide" id="LifestyleParagraphLine"></div>
 
 									<div class="col-sm-2" style="margin: 5px 0 0 0;"><a class="Tabs" data-para = "BlogParagraph" id="Blog" href="#">BLOG</a><br><hr width=100px; color="blue"; class = "container hide" id="BlogParagraphLine"></div>
 								</div>
 							</div>
+						</div>
 							<hr class= "seperators">
-						<div class = "container" id="HomeParagraph">
-
+						<div class = "hide" id="HomeParagraph">
+							<div class="container">
 							<div>
 								<img class = "cover" src="Cover.JPG" style="float: center; width: 100%; max-height: 600px;"/>
 								<div></div>
@@ -51,18 +52,18 @@
 							<div class= "heading">SECTIONS</div>
 							<div class="container-fluid">
 								<div class="row">
-									<div class="col-sm-6" style="margin: 5px 0 0 0;"><img src="newspaper.JPG" style="width: 80%;"></div>
-									<div class="col-sm-6" style="margin: 5px 0 0 0;">
+									<div class="col-sm-6" style="margin: 10px 0 0 0;"><img src="newspaper.JPG" style="width: 80%;"></div>
+									<div class="col-sm-6" style="margin: 10px 0 0 0;">
 										<div class="subtitle">Latest News</div><br>
 										<div>In our Latest News section, we bring you the newest and most exciting news related to the North West Philadelphia area. With compelling photos and quotes directly from the source, we keep you up to date on the latest and greatest. </div>
 									</div>
-									<div class="col-sm-6" style="margin: 5px 0 0 0;">
+									<div class="col-sm-6" style="margin: 10px 0 0 0;">
 										<div class="subtitle">Local Interest</div><br>
 										<div>We not only focus on the big news, but also on the news that matters to our community. In our Local Interest section, you can read about matters that are closer to home. And let us know of a local issue you think we should cover.</div>
 									</div>
-									<div class="col-sm-6" style="margin: 5px 0 0 0;"><img src="house.JPG" style="width: 80%;"></div>
-									<div class="col-sm-6" style="margin: 5px 0 0 0;"><img src="community.jpg" style="width: 80%;"></div>
-									<div class="col-sm-6" style="margin: 5px 0 0 0;">
+									<div class="col-sm-6" style="margin: 10px 0 0 0;"><img src="house.JPG" style="width: 80%;"></div>
+									<div class="col-sm-6" style="margin: 10px 0 0 0;"><img src="community.jpg" style="width: 80%;"></div>
+									<div class="col-sm-6" style="margin: 10px 0 0 0;">
 										<div class="subtitle">How-to & More</div><br>
 										<div>We have many more ways to keep you connected to the information you need. From informative how-to articles to interviews with top members of the field, we continue to bring you the stories you need and love.</div>
 									</div>
@@ -71,7 +72,7 @@
 							
 							
 							<div class= "heading">RECENT ISSUES</div>
-							<div>Download a PDF of a recent issue, or subscribe below to receive our latest articles in your inbox.</div>
+							<div style="margin-bottom: 30px;">Download a PDF of a recent issue, or subscribe below to receive our latest articles in your inbox.</div>
 							<div class="container" style="background-color: #f0f4fc;">
 								<h3>Files coming soon.</h3>
 							</div>
@@ -87,12 +88,17 @@
 							</div>
 
 							<div class="subscribe">SUBSCRIBE</div><br>
-							<div>Sign up to get each issue delivered straight to your inbox.</div>
-										<form action="">
-												<div class="form-group">
-														<input type="text" id="Email" name="Email" placeholder="Email">
-														<button type="submit">Submit</button>
-												</div>
+							<div style="margin-bottom: 30px;">Sign up to get each issue delivered straight to your inbox.</div>
+										<form action="" >
+														<div class="subscriber" style="left: 18%">
+															<input type="text" name="name" autocomplete="off" required />
+															<label for="name" class="label-name">
+																<span class="content-name" style="margin-left: 5px;">Email</span>
+															</label>
+														
+													
+														<button type="submit" style="float: right;">Sign Up</button>
+														</div>
 										</form>
 							<div class= "heading">CONTACT US</div>
 							<div class="container-fluid">
@@ -100,13 +106,27 @@
 									<div class="form-group col-sm-6">
 
 										<div class="messages">Send Message</div><br>
-												
-										<input type="text" id="Name" name="Name" placeholder="Name"><br>
-
-										<input type="text" id="Email" name="Email" placeholder="Email"><br>
-
-										<input type="text" id="Message" name="Message" placeholder="Message"><br>
+										<div class="messanger">		
+											<input type="text" name="Name" autocomplete="off" required />
+											<label for="name" class="label-name">
+												<span class="content-name" style="margin-left: 5px;">Name</span>
+											</label><br>
+										</div>
+										<div class="messanger">	
+										<input type="text" name="Email" autocomplete="off" required />
+										<label for="name" class="label-name">
+											<span class="content-name" style="margin-left: 5px;">Email</span>
+										</label><br>
+										</div>
+										<div class="messanger">	
+										<input type="text" name="message" autocomplete="off" required />
+										<label for="name" class="label-name">
+											<span class="content-name" style="margin-left: 5px;">Message</span>
+										</label><br>
+										</div>
+										<div class="messanger">	
 										<button type="Send">Send</button><br>
+										</div>
 									</div>
 									<div class="col-sm-6" style="text-align: left;">
 										<div class="subtitle">What are you thinking about?</div><br>
@@ -114,20 +134,21 @@
 
 										<div class="subtitle">Send us a message and let us know what you are thinking about.</div><br>
 
-										<div>North West Philadelphia Magzazine<br>
+										<div>North West Philadelphia Magazine<br>
 										4323 Main Street, Philadelphia, Pennsylvania 19127, United States</div><br>
 									</div>
 								</div>
 							</div>
 
 							<div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=4323%20Main%20St,%20Philadelphia,%20PA%2019127&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">responsive google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+							</div>
 						</div>
 
 
 
 
-
-						<div class = "container hide" id="UpcomingEventsParagraph">
+						<div class = "hide" id="UpcomingEventsParagraph">
+							<div class="container">
 							<div class= "heading">Events</div>
 
 							<div class="container-fluid">
@@ -245,77 +266,151 @@
 							</div>
 
 
+							</div>
 						</div>
 
 
-						<div class = "container hide" id="DiningParagraph">
+						<div class = "hide" id="DiningParagraph">
+							<div class="container">
 							<div class= "heading">Dining</div>
 							<img src="ThunderMug.jpg" style="width: 50%;"><br>
-							For a good cup of coffee and delicious pastries head to <a href="https://www.thundermugcafe.com/" target="_blank">Thunder Mug</a> in East Falls.
-							<img src="BourbonBlue.jpg" style="width: 50%;"><br>
-							For a round of drinks and American cuisine with a twist, visit <a href="https://www.bourbonblue.com/" target="_blank">Bourbon Blue</a> in the heart of Manayunk.
+							For a good cup of coffee and delicious pastries head to <a href="https://www.thundermugcafe.com/" target="_blank">Thunder Mug</a> in East Falls.<br>
 							<img src="ManayunkChambers.jpg" style="width: 50%;"><br>
-							Need a quiet weekend getaway? Book a trip to the <a href="https://www.manayunkchambers.com/" target="_blank">Manayunk Chambers</a> Guesthouse a luxury, historic guest house in Manayunk.
+							Need a quiet weekend getaway? Book a trip to the <a href="https://www.manayunkchambers.com/" target="_blank">Manayunk Chambers</a> Guesthouse a luxury, historic guest house in Manayunk.<br>
 							<img src="GoatsBeard.jpg" style="width: 50%;"><br>
-							Fresh ingredients and local drinks? Look no further than <a href="http://www.thegoatsbeardmanayunk.com/aboutus" target="_blank">The Goat's Beard</a> in Manayunk.
+							Fresh ingredients and local drinks? Look no further than <a href="http://www.thegoatsbeardmanayunk.com/aboutus" target="_blank">The Goat's Beard</a> in Manayunk.<br>
 							<img src="LuckysLastChance.jpg" style="width: 50%;"><br>
-							Artistic Burgers. Craft Beer. Serious Hotdogs. <a href="http://luckyslastchance.com/" target="_blank">Lucky's Last Chance.</a>
+							Artistic Burgers. Craft Beer. Serious Hotdogs. <a href="http://luckyslastchance.com/" target="_blank">Lucky's Last Chance.</a><br>
 							<img src="Taproom.jpg" style="width: 50%;"><br>
-							Craft beer and wood-fired pizza is the specialty of <a href="https://chestnuthillbrewingcompany.com/" target="_blank">Chestnut Hill's Brewing Taproom.</a>
+							Craft beer and wood-fired pizza is the specialty of <a href="https://chestnuthillbrewingcompany.com/" target="_blank">Chestnut Hill's Brewing Taproom.</a><br>
 							<img src="cocao.jpg" style="width: 50%;">
 
 
+							</div>
 						</div>
 
 
-						<div class = "container hide" id="LifestyleParagraph">
+						<div class = "hide" id="LifestyleParagraph">
+							<div class="container">
 							<div class= "heading">Site Content</div>
 							<div class="container-fluid">
 								<div class="row">
-									<div class="col-sm-4 block">
-										Nightlife<br>
-										<img src="BaldBirds.jpg" style="width: 50%;"><br>
-										From your favorite bar to the best entertainment in town!
+									<div class="col-sm-4">
+									<a style = "text-decoration: none;" href="https://baldbirdsbrewing.com/">
+										<article class = "block">
+											
+												<div class="lifestyle-subtitle">Nightlife</div>
+												<img src="BaldBirds.jpg" style="width: 100%; height: 150px;"><br>
+												<div class="lifestyle-description">From your favorite bar to the best entertainment in town!</div>
+											
+										</article>
+									</a>
 									</div>
 
-									<div class="col-sm-4 block">
-										Live Music and Events<br>
-										<img src="Fillmore.jpg" style="width: 50%;"><br>
-										Concerts, shows, great venues, and more!
+									<div class="col-sm-4">
+									<article class = "block">
+										<div class="lifestyle-subtitle">Live Music and Events</div>
+										<img src="Fillmore.jpg" style="width: 100%; height: 150px;"><br>
+										<div class="lifestyle-description">Concerts, shows, great venues, and more!</div>
+									</article>
 									</div>
 
-									<div class="col-sm-4 block">
-										Fitness and Health<br>
-										<img src="Yoga.jpg" style="width: 50%;"><br>
-										Health and fitness that can be located all around the city.
+									<div class="col-sm-4">
+										<a style = "text-decoration: none;" href="https://www.yogaonmain.com/">
+											<article class = "block">
+												<div class="lifestyle-subtitle">Fitness and Health</div>
+												<img src="Yoga.jpg" style="width: 100%; height: 150px;"><br>
+												<div class="lifestyle-description">Health and fitness that can be located all around the city.</div>
+											</article>
+										</a>
 									</div>
 
-									<div class="col-sm-4 block">
-										Promotions<br>
-										<img src="Promotion.jpg" style="width: 50%;"><br>
-										Special seasonal promotions by some of our members!
+									<div class="col-sm-4">
+										<article class = "block">
+											<div class="lifestyle-subtitle">Promotions</div>
+											<img src="Promotion.jpg" style="width: 100%; height: 150px;"><br>
+											<div class="lifestyle-description">Special seasonal promotions by some of our members!</div>
+										</article>
 									</div>
 
-									<div class="col-sm-4 block">
-										Food<br>
-										<img src="BourbonBlue.jpg" style="width: 50%;"><br>
-										Showcasing the best grub North West Philly has to offer.
+									<div class="col-sm-4">
+										<a style = "text-decoration: none;" href="http://www.thegoatsbeardmanayunk.com/aboutus">
+										<article class = "block">
+										<div class="lifestyle-subtitle">Food</div>
+										<img src="GoatsBeard.jpg" style="width: 100%; height: 150px;"><br>
+										<div class="lifestyle-description">Showcasing the best grub North West Philly has to offer.</div>
+										</article>
 									</div>
 
-									<div class="col-sm-4 block">
-										Art<br>
-										<img src="Art.jpg" style="width: 50%;"><br>
-										All of the local art galleries and upcoming openings happening here.
+									<div class="col-sm-4">
+										<a style = "text-decoration: none;" href="https://www.veniceisland.org/">
+										<article class = "block">
+											<div class="lifestyle-subtitle">Art</div>
+											<img src="Art.jpg" style="width: 100%; height: 150px;"><br>
+											<div class="lifestyle-description">All of the local art galleries and upcoming openings happening here.</div>
+										</article>
 									</div>
 								</div>
 							</div>
-
-
+							</div>
 						</div>
-						<div class = "container hide" id="BlogParagraph">
-							<h1>Under Construction 5</h1>
+								<div class = "" id="BlogParagraph">
+									<div class = "MagazineBackground" style="background-image: url('magazine.jpg'); width: 100%;">
+									<div style="color: white; font-size: 27pt; font-family: arial; padding: 30px;">MY BLOG</div>
+									<div class = "container" style="align-content: center;">
+									<div class="row" style=" align-content: : center;">
+										<div class="col-3 col-12-mobile">
+											<a style = "text-decoration: none;" href="https://nwphillymag.com/blog/f/home-bartending-your-guide-to-the-perfect-drink" class="image fit">
+												<article class="item">
+													<img class="image-fit" src="kitchen.jpg" alt="" />
+													<header>
+														<div class = "date">May 15, 2020</div>
+														<div class = "description">Home bartending: Your guide to the perfect drink</div>
+														<div class = "continue">Continue Reading</div>
+													</header>
+												</article>
+											</a>
+										</div>
+										<div class="col-3 col-12-mobile">
+											<a style = "text-decoration: none;" href="https://nwphillymag.com/blog/f/five-ways-to-support-shelter-animals-if-youre-not-ready-to-adopt" class="image fit">
+												<article class="item">
+													<img class="image-fit" src="dog.jpg" alt="" />
+													<header>
+														<div class = "date">May 15, 2020</div>
+														<div class = "description">Five ways to support shelter animals if you're</div>
+														<div class = "continue">Continue Reading</div>
+													</header>
+												</article>
+											</a>
+										</div>
+										<div class="col-3 col-12-mobile">
+											<a style = "text-decoration: none;" href="https://nwphillymag.com/blog/f/4-ways-female-founders-turbocharge-their-businesses" class="image fit">
+												<article class="item">
+													<img class="image-fit" src="store.jpg" alt="" />
+													<header>
+														<div class = "date">April 30, 2020</div>
+														<div class = "description">4 ways Female Founders Turbocharge Their</div>
+														<div class = "continue">Continue Reading</div>
+													</header>
+												</article>
+											</a>
+										</div>
+										<div class="col-3 col-12-mobile">
+											<a style = "text-decoration: none;" href="https://nwphillymag.com/blog/f/bean-recipes-for-spring" class="image fit">
+												<article class="item">
+													<img class="image-fit" src="bowls.jpg" alt="" />
+													<header>
+														<div class = "date">April 30, 2020</div>
+														<div class = "description">Bean Recipes for Spring</div>
+														<div class = "continue">Continue Reading</div>
+													</header>
+												</article>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
 				</p>
 			</b>
 		</nav>

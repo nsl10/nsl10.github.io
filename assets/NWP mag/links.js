@@ -23,15 +23,15 @@ function pClick() {
 
 	console.log(paraId);
 
-	if (para.className === "container hide") {
+	if (para.className === "hide") {
 
-		HomeParagraph.className = "container hide"
-		UpcomingEventsParagraph.className = "container hide"
-		DiningParagraph.className = "container hide"
-		LifestyleParagraph.className = "container hide"
-		BlogParagraph.className = "container hide"
+		HomeParagraph.className = "hide"
+		UpcomingEventsParagraph.className = "hide"
+		DiningParagraph.className = "hide"
+		LifestyleParagraph.className = "hide"
+		BlogParagraph.className = "hide"
 
-		para.className = "container";
+		para.className = "";
 		HomeParagraphLine.className = HomeParagraph.className
 		UpcomingEventsParagraphLine.className = UpcomingEventsParagraph.className
 		DiningParagraphLine.className = DiningParagraph.className
