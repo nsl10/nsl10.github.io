@@ -32,6 +32,10 @@ a.Tabs{
 hr{
 	border-top: 2px solid #f0f4fc;
 }
+.restraunt-title{
+	color: #336699;
+}
+
 .block{
 	background: #f0f4fc;
 	margin: 10px;
@@ -178,12 +182,12 @@ hr{
 
 .item{
 	background-color: white;
-	height: 300px;
+	height: 310px;
 }
 .image-fit{
 	height: 120px;
 	width: 99%;
-	margin: 2px;
+	margin: 1px;
 }
 .MagazineBackground {
 	height: 500px;
@@ -204,4 +208,3 @@ hr{
 	font-size: 13.5pt;
 	font-family: georgia;
 	color: #1e81b0;
-}
