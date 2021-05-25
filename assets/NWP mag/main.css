@@ -35,11 +35,35 @@ hr{
 .restraunt-title{
 	color: #336699;
 }
-
+/*art*/
 .block{
-	background: #f0f4fc;
+	/*background: #f0f4fc;*/
+	background:white;
+	margin: 10px;
+	border: solid;
+	border-color: black;
+	border-width: 3px;
+	height: 320px;
+	filter: grayscale(90%);
+}
+.block:hover{
+	filter: grayscale(0%);
+	transition: 1s ease; 
+}
+/*art end*/
+
+
+.block2{
+	background: #baf1ff;
 	margin: 10px;
 }
+.block3{
+	border: 1px solid black;
+	margin: 0;
+	padding: 0;
+
+}
+
 .lifestyle-subtitle{
 	font-size: 18pt;
 	font-family: georgia;
@@ -127,7 +151,7 @@ hr{
 
 
 .messanger{
-	width: 50%;
+	width: 90%;
 	position: relative;
 	height: 50px;
 	padding-bottom: 10px;
@@ -184,6 +208,13 @@ hr{
 	background-color: white;
 	height: 310px;
 }
+.item2{
+	background-color: white;
+	height: 310px;
+	width: 250px;
+	margin: 10px;
+	display: inline-block;
+}
 .image-fit{
 	height: 120px;
 	width: 99%;
@@ -203,8 +234,39 @@ hr{
 	height: 100px;
 	margin: 10px;
 	color: black;
+	white-space: normal;
 }
 .continue{
 	font-size: 13.5pt;
 	font-family: georgia;
 	color: #1e81b0;
+}
+.horizontal_slider{
+	display: block;
+	overflow-x: scroll;
+}
+.slider_container{
+	display: block;
+	white-space: nowrap;
+}
+/* Works on Firefox */
+.horizontal_slider {
+  scrollbar-width: thin;
+  scrollbar-color: #365861 white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+
+.horizontal_slider::-webkit-scrollbar {
+  width: 3px;
+}
+
+.horizontal_slider::-webkit-scrollbar-track {
+  background: none;
+}
+
+.horizontal_slider::-webkit-scrollbar-thumb {
+  background-color: #365861;
+  border-radius: 20px;
+  border: 1px solid black;
+}
